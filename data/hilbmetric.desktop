@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=0.0.1
+Type=Application
+Name=Hilbmetric
+GenericName=Hilbmetric
+Comment=Python program for the Hilbert projective metric
+TryExec=hilbmetric
+Exec=hilbmetric %F
+Categories=Science; Mathematics;Qt;
+Icon=hilbmetric
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+
