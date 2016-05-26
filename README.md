@@ -1,5 +1,5 @@
-hilbmetric
-==========
+#hilbmetric
+
 
 Python program for the Hilbert projective metric
 
