@@ -1,40 +1,36 @@
 #!/usr/bin/env python
 
-from sys import platform
-from platform import architecture
-
 from setuptools import setup
 
-from hilbert.common.__appinfo__ import __description__, \
-    __version__, __url_proj__, __email__ 
+__appinfo__ = {}
+with open(os.path.join("hilbert", "common", "__appinfo__")) as fi:
+    exec(f.read(), __appinfo__)
 
-with open('README') as file:
-       long_description= file.read()
+data_files = __appinfo__.get('data_files', None)
+include_dirs = __appinfo__.get('include_dirs', [])
+ext_modules = __appinfo__.get('ext_modules', None)
+install_requires = __appinfo__.get('install_requires', None)
 
-# Chek for Python 3
-PY3 = sys.version_info[0] == 3
+setup(
+    name=__appinfo__['__name__'],
+    description=__appinfo__['__descr__'],
+    long_descr=__appinfo__['__ldescr__'],
+    version=__version__,
+    license=__appinfo__['__license__'],
+    url=__appinfo__['__url__'],
+    author=__appinfo__['__author__'],
+    author_email=__appinfo__['__email__'],
+    classifiers=__appinfo__['__classifiers__'],
+    keywords=__appinfo__['__keywords__'],
+    data_files=data_files,
+    install_requires=__appinfo__['__install_requires__'],
+    platforms=__appinfo__['__platform__'],
+    ext_modules=ext_modules,
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
+)
 
-def install_data_files():
-    """ """
-    if sys.platform.startswith('netbsd'):
-        """ """
-        pass
-    elif sys.platform.startswith('freebsd'):
-        """ """
-        pass
-    elif sys.platform.startswith('linux'):
-        if PY3:
-            data_files = [('share/applications', ['script/hilbmetric.desktop']),
-                          ('share/pixmaps', ['data/hilbmetric.png'])]
-        else:
-            data_files = [('share/applications', ['script/hilmetric.desktop'] ), 
-                          ('share/pixmaps', ['data/hilbmetric.png'])]
-    elif os.name =='nt':
-            data_files = [('script', ['data/hilbmetric.ico'])]
-    else:
-        data_files = []
-    return data_files
-        
 # setup(
 #     name='hilbmetric',
 #     version=__version__,
@@ -45,25 +41,10 @@ def install_data_files():
 #     maintainer = 'HilbertMetric Developers',
 #     maintainer_email =__email__,
 #     url=__url_proj__,
-#     keywords=['hilbert, geometry', 'mesure', 'convex'],
+#     
 #     py_modules=['hilbmetric'],
 #     license='Apache-2.0',
 #     data_files=install_data_files(),
 #     install_requires=["sympy(>=0.7.6.1)", "PyQt4 (>=4.4)"],
 #     platforms='any',
-#     classifiers=[
-#         'Development Status :: 3 - Alpha',
-#         'Environment :: Other Environment',
-#         'Intended Audience :: Education',
-#         'Intended Audience :: Developers',
-#         'Intended Audience :: Science/Research',
-#         'License :: OSI Approved :: Apache',
-#         'Natural Language :: English',
-#         'Operating System :: OS Independent',
-#         'Programming Language :: Python :: 2.7',
-#         'Programming Language :: Python :: 3',
-#         'Programming Language :: Python :: 3',
-#         'Topic :: Scientific/Engineering :: Mathematics',
-#         'Topic :: Scientific/Engineering :: Visualization',
-#     ],
 # )
