@@ -2,6 +2,9 @@
 
 from setuptools import setup
 
+with open('LICENSE') as file:
+    __license__ = file.read()
+
 __appinfo__ = {}
 with open(os.path.join("hilbert", "common", "__appinfo__")) as fi:
     exec(f.read(), __appinfo__)
@@ -16,7 +19,7 @@ setup(
     description=__appinfo__['__descr__'],
     long_descr=__appinfo__['__ldescr__'],
     version=__version__,
-    license=__appinfo__['__license__'],
+    license=__license__,
     url=__appinfo__['__url__'],
     author=__appinfo__['__author__'],
     author_email=__appinfo__['__email__'],
