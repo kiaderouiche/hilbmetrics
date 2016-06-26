@@ -2,14 +2,28 @@
 """
 Get information for hilbmetric
 """
+from __accessdata__ import install_data_files
 
-__description__ = "Python program for the Hilbert projective metric"
+description = "Python program for the Hilbert projective metric"
+
+with open('LICENSE') as file:
+	license = file.read()
+
+with open('README') as file:
+       long_description = file.read()
+
+__name__ = "hilbmetric"
+__author__ = "K.I.A.Derouiche"
+__descr__ = description
+__ldescr__ = long_description
 __version__ = "1.0-pre01"
+__platform__ = "NetBSD"
 __url__ = "https://github.com/kiaderouiche/hilbmetric"
 __email__= "kamel.derouiche@gmail.com"
+__license__ = license
 __keywords__= ['hilbert, geometry', 'mesure', 'convex']
 
-__classifiers__=[
+__classifiers__= [
          'Development Status :: 3 - Alpha',
          'Environment :: Other Environment',
          'Intended Audience :: Education',
