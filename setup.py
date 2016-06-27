@@ -2,7 +2,6 @@
 
 import os
 import os.path
-from setuptools import setup
 
 try:
     if os.environ.get('NO_SETUPTOOLS'):
@@ -15,8 +14,8 @@ except ImportError:
     USE_SETUPTOOLS = 0
 easy_install_lib = None
 
-with open('LICENSE') as file:
-    __license__ = file.read()
+with open('LICENSE') as fi:
+    __license__ = fi.read()
 
 __appinfo__ = {}
 with open(os.path.join("hilbert", "common", "__appinfo__")) as fi:
