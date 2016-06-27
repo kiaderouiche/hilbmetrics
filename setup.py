@@ -1,13 +1,26 @@
 #!/usr/bin/env python
 
+import os
+import os.path
 from setuptools import setup
+
+try:
+    if os.environ.get('NO_SETUPTOOLS'):
+        raise ImportError()
+    from setuptools import setup, find_packages
+    from setuptools.command import easy_install as easy_install_lib
+    USE_SETUPTOOLS = 1
+except ImportError:
+    from distutils.core import setup
+    USE_SETUPTOOLS = 0
+easy_install_lib = None
 
 with open('LICENSE') as file:
     __license__ = file.read()
 
 __appinfo__ = {}
 with open(os.path.join("hilbert", "common", "__appinfo__")) as fi:
-    exec(f.read(), __appinfo__)
+    exec(fi.read(), __appinfo__)
 
 __data_files__ = __appinfo__.get('__data_file__', None)
 include_dirs = __appinfo__.get('include_dirs', [])
@@ -18,7 +31,7 @@ setup(
     name=__appinfo__['__name__'],
     description=__appinfo__['__descr__'],
     long_descr=__appinfo__['__ldescr__'],
-    version=__version__,
+    version=__appinfo__['__version__'],
     license=__license__,
     url=__appinfo__['__url__'],
     author=__appinfo__['__author__'],

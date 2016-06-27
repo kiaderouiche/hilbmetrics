@@ -6,7 +6,6 @@ from __accessdata__.install_data_files import datafiles
 
 __install_requires__ = [
     'sympy>= 1.0',
-    'python-notify>=0.4.5',
 ]
 
 description = "Python program for the Hilbert projective metric"
