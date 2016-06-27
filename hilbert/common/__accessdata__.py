@@ -1,14 +1,17 @@
-from sys import platform
-from platform import architecture
+import os
+import sys
+
+# Chek for Python 3
+PY3 = sys.version_info[0] == 3
 
 
 def install_data_files():
-    """ """
+    
     if sys.platform.startswith('netbsd'):
-        """ """
+        
         pass
     elif sys.platform.startswith('freebsd'):
-        """ """
+        
         pass
     elif sys.platform.startswith('linux'):
         if PY3:
@@ -20,5 +23,7 @@ def install_data_files():
     elif os.name =='nt':
             data_files = [('script', ['data/hilbmetric.ico'])]
     else:
-        data_files = []
-    return data_files
+        dtfiles = []
+    return dtfiles
+
+datafiles = install_data_files()
