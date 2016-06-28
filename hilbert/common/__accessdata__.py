@@ -24,6 +24,4 @@ def install_data_files():
             data_files = [('script', ['data/hilbmetric.ico'])]
     else:
         dtfiles = []
-    return dtfiles
-
-datafiles = install_data_files()
+    return datafiles

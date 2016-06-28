@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import json
 import os
 import os.path
 
@@ -17,8 +18,14 @@ easy_install_lib = None
 with open('LICENSE') as fi:
     __license__ = fi.read()
 
+with open('DESCR') as fi:
+    __ldescr__ = fi.read()
+
+with open('version.json') as f:
+    __version__ = '.'.join(str(part) for part in json.load(f))
+
 __appinfo__ = {}
-with open(os.path.join("hilbert", "common", "__appinfo__")) as fi:
+with open(os.path.join("hilbert", "common", "__appinfo__.py")) as fi:
     exec(fi.read(), __appinfo__)
 
 __data_files__ = __appinfo__.get('__data_file__', None)
@@ -29,8 +36,8 @@ install_requires = __appinfo__.get('install_requires', None)
 setup(
     name=__appinfo__['__name__'],
     description=__appinfo__['__descr__'],
-    long_descr=__appinfo__['__ldescr__'],
-    version=__appinfo__['__version__'],
+    long_descr=__ldescr__,
+    version=__version__,
     license=__license__,
     url=__appinfo__['__url__'],
     author=__appinfo__['__author__'],
