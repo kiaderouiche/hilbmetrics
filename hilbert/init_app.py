@@ -1,4 +1,4 @@
-#!/usr/pkg/bin/env python
+#!/usr/pkg/bin/env python3
 #
 
 import os
