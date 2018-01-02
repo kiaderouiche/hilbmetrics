@@ -13,3 +13,9 @@ Cayley's formula for the distance in the Cayley–Klein model of hyperbolic
 geometry, where the convex set is the n-dimensional open unit ball.
 Hilbert's metric has been applied to Perron–Frobenius theory and 
 constructing Gromov hyperbolic spaces.
+
+## Installation
+
+Future installation. It requires on the following Python modules:
+- SymPy(>= 1.1)
+- opencv-python(>= 3.4)
