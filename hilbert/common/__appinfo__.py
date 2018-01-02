@@ -28,7 +28,6 @@ __classifiers__= [
          'License :: OSI Approved :: Apache',
          'Natural Language :: English',
          'Operating System :: OS Independent',
-         'Programming Language :: Python :: 2.7',
          'Programming Language :: Python :: 3',
          'Programming Language :: Python :: 3',
          'Topic :: Scientific/Engineering :: Mathematics',
