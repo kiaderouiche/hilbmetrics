@@ -18,13 +18,12 @@ __platform__ = "any"
 __data_file__ = install_data_files
 __url__ = "https://github.com/kiaderouiche/hilbmetric"
 __email__= "kamel.derouiche@gmail.com"
-__keywords__= ['hilbert, geometry', 'mesure', 'convex']
+__keywords__= ['hilbert, geometry', 'mesure', 'convex', 'manifold', 'group', 'hyperbolic', 'birapport', 'log']
 __classifiers__= [
          'Development Status :: 3 - Alpha',
          'Environment :: Other Environment',
          'Intended Audience :: Education',
          'Intended Audience :: Developers',
-         'Intended Audience :: Web',
          'Intended Audience :: Science/Research',
          'License :: OSI Approved :: Apache',
          'Natural Language :: English',
