@@ -3,7 +3,7 @@
 
 **hilbmetric v1.0-pre03** Python program for the Hilbert projective metric
 
-## Introduction
+## What the Hilbert projective metric ?
 
 In mathematics, the Hilbert metric, also known as the Hilbert projective 
 metric, is an explicitly defined distance function on a bounded convex 
