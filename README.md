@@ -7,7 +7,7 @@
 
 In mathematics, the Hilbert metric, also known as the Hilbert projective 
 metric, is an explicitly defined distance function on a bounded convex 
-subset of the n-dimensional Euclidean space Rn.
+subset of the n-dimensional Euclidean space R^n.
 It was introduced by David Hilbert (1895) as a generalization of the 
 Cayley's formula for the distance in the Cayley–Klein model of hyperbolic 
 geometry, where the convex set is the n-dimensional open unit ball.
