@@ -1,1 +1,4 @@
 
+"""
+Thompson metric
+"""
