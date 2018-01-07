@@ -1,6 +1,6 @@
 """
 
-Hilbert projective metric
+Hilbert projective metric (Basic conding !)
 =========================
 
 - boundary of Ω
@@ -15,10 +15,14 @@ d(x,y) = ln( ---------------- )
 
 from sympy import symbols
 from sympy import log
+from sympy.geometry import Point, convex_hull
 
 x, y = symbols('x, y')
 p, q = symbols('p, q')
 
 def d(x, y):
-  pass 
+  """
+  Hilbert metric
+  """
+ 
               
