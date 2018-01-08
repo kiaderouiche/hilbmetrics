@@ -16,7 +16,7 @@ constructing Gromov hyperbolic spaces.
 
 <img src = "https://github.com/kiaderouiche/hilbmetrics/blob/master/data/mimetex_cgi.png" title = "Hilbert Metrics" alt = "Hilbert Metrics">
 
-<img src = "https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png" title = "Ensembles convexes" alt = "Ensembles convexes">
+<img src = "https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png" title = "Ensembles convexes" alt = "Ensembles convexes" align="middle">
 
 
 ## Installation
