@@ -16,7 +16,6 @@ constructing Gromov hyperbolic spaces.
 
 ![texte alternatif](https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png "Ensembles convexes")
 
-$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
 
 ## Installation
 
