@@ -14,7 +14,7 @@ geometry, where the convex set is the n-dimensional open unit ball.
 Hilbert's metric has been applied to Perron–Frobenius theory and 
 constructing Gromov hyperbolic spaces.
 
-![texte alternatif] (https://github.com/kiaderouiche/hilbmetrics/blob/master/data/mimetex.cgi.gif "Hilbert Metrics")
+![texte alternatif] (https://github.com/kiaderouiche/hilbmetrics/blob/master/data/mimetex_cgi.png "Hilbert Metrics")
 
 ![texte alternatif](https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png "Ensembles convexes")
 
