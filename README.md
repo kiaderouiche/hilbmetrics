@@ -16,6 +16,8 @@ constructing Gromov hyperbolic spaces.
 
 ![texte alternatif](https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png "Ensembles convexes")
 
+![texte alternatif](https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png "Ensembles convexes")
+
 
 ## Installation
 
