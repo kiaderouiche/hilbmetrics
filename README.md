@@ -1,7 +1,7 @@
 # hilbmetric
 
 
-**hilbmetric v1.0-pre03** Python program for the Hilbert projective metric
+**hilbmetric v1.0-pre03** Python3 program for the Hilbert projective metric
 
 ## What the Hilbert projective metric ?
 
