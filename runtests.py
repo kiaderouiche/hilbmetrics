@@ -10,4 +10,6 @@ def runtests(argv):
   except getopt.GetoptError:
     usage()
     sys.exit(2)
-
+    
+if __name__ == '__main__':
+  runtests(sys.argv[1:])
