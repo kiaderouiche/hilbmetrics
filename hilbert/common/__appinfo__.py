@@ -6,7 +6,8 @@ from hilbert.common.__accessdata__ import install_data_files
 
 __install_requires__ = [
     'sympy>= 1.1',
-    'opencv-python>= 3.4
+    'opencv-python>= 3.4',
+    'scipy>= 1.0.0',
 ]
 
 description = "Python program for the Hilbert projective metric"
@@ -18,7 +19,7 @@ __platform__ = "any"
 __data_file__ = install_data_files
 __url__ = "https://github.com/kiaderouiche/hilbmetric"
 __email__= "kamel.derouiche@gmail.com"
-__keywords__= ['hilbert, geometry', 'mesure', 'convex', 'manifold', 'group', 'hyperbolic', 'birapport', 'log']
+__keywords__= ['hilbert, geometry', 'mesure', 'convex', 'manifold', 'group', 'hyperbolic', 'birapport', 'ln']
 __classifiers__= [
          'Development Status :: 3 - Alpha',
          'Environment :: Other Environment',
