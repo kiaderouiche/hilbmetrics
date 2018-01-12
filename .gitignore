@@ -1,0 +1,29 @@
+*.pyc
+*.pyo
+*.so
+*.class
+*~
+build/
+/dist/
+MANIFEST
+/hilbmetrics.egg-info/
+.vagrant
+/htmlcov/
+/env/
+
+# Used in demo apps
+secrets.cfg
+.mypy_cache/
+
+
+# Translations
+*.mo
+*.pot
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
