@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/pkg/bin/env python3
 
 import json
 import os
+from pathlib import Path
 import os.path
 
 try:
@@ -15,18 +16,24 @@ except ImportError:
     USE_SETUPTOOLS = 0
 easy_install_lib = None
 
-with open('LICENSE') as fi:
-    __license__ = fi.read()
+wrkdir = Path('.')
 
-with open('DESCR') as fi:
-    __ldescr__ = fi.read()
+lics = wrkdir /'LICENSE'
+ldsc = wrkdir /'DESCR'
+fvers = wrkdir /'version.json'
 
-with open('version.json') as f:
-    __version__ = '.'.join(str(part) for part in json.load(f))
+with lics.open() as milaf:
+    __license__ = milaf.read()
+
+with ldsc.open() as milaf:
+    __ldescr__ = milaf.read()
+
+with fvers.open() as milaf:
+    __version__ = '.'.join(str(part) for part in json.load(milaf))
 
 __appinfo__ = {}
-with open(os.path.join("hilbert", "common", "__appinfo__.py")) as fi:
-    exec(fi.read(), __appinfo__)
+with open(os.path.join("hilbert", "common", "__appinfo__.py")) as milaf:
+    exec(milaf.read(), __appinfo__)
 
 __data_files__ = __appinfo__.get('__data_file__', None)
 include_dirs = __appinfo__.get('include_dirs', [])

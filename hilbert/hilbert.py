@@ -15,14 +15,27 @@ d(x,y) = ln( ---------------- )
 
 from sympy import symbols
 from sympy import log
-from sympy.geometry import Point, convex_hull
+from sympy.geometry import Point, Line
+from sympy.geometry import convexHull
 
-x, y = symbols('x, y')
-p, q = symbols('p, q')
+x, y = symbols('x, y', positive=True)
+p, q = symbols('p, q', positive=True)
 
-def d(x, y):
+def check_collinear(x, y, p, q):
+  """
+  Checking collinearity of points
+  """
+  pass
+
+def birapport_calculs():
+  """ 
+  Birapport
+  """
+  pass
+
+def d_c(x, y):
   """
   Hilbert metric
-  """
+  """  
  
               
