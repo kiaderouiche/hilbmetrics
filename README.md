@@ -24,3 +24,4 @@ constructing Gromov hyperbolic spaces.
 Future installation. It requires on the following Python modules:
 - SymPy(>= 1.1)
 - opencv-python(>= 3.4)
+- scipy (>= 1.0.0)
