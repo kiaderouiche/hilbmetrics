@@ -2,7 +2,7 @@
 
 import json
 import os
-from pathlib import Path
+from pathlib
 import os.path
 
 try:
@@ -32,8 +32,8 @@ with fvers.open() as milaf:
     __version__ = '.'.join(str(part) for part in json.load(milaf))
 
 __appinfo__ = {}
-with open(os.path.join("hilbert", "common", "__appinfo__.py")) as milaf:
-    exec(milaf.read(), __appinfo__)
+contents = pathlib.Path("hilbert", "common", "__appinfo__.py")
+exec(f.read_text(), __appinfo__)
 
 __data_files__ = __appinfo__.get('__data_file__', None)
 include_dirs = __appinfo__.get('include_dirs', [])
