@@ -1,4 +1,6 @@
-!#/usr/pkg/bin/env python3
+!#/usr/pkg/bin/env python
+#-*- coding: utf-8 -*-
+
 #
 """
               |py||xq|         
