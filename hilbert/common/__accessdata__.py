@@ -5,7 +5,7 @@ import sys
 PY3 = sys.version_info[0] == 3
 
 
-def install_data_files():
+def install_data_files() -> []:
     if sys.platform.startswith('netbsd'):
         data_files = [('/usr/pkg/share/applications', ['script/hilbmetric.desktop']),
                           ('/usr/pkg/share/pixmaps', ['data/hilbmetric.png'])]
