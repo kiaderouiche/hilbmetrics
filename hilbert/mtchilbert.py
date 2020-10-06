@@ -18,10 +18,12 @@ from sympy import log
 from sympy.geometry import Point, Line
 from sympy.geometry import convexHull
 
-x, y = symbols('x, y', positive=True)
-p, q = symbols('p, q', positive=True)
-
-def check_collinear(x, y, p, q):
+class HilbertMetric():
+  def __init__(self):
+    """
+    """
+    pass
+def check_collinear(x, y, p, q)--> bool:
   """
   Checking collinearity of points
   """

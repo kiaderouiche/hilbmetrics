@@ -5,10 +5,10 @@ Get information for hilbmetric
 from hilbert.common.__accessdata__ import install_data_files
 
 __install_requires__ = [
-    'PyQt5',
-    'sympy>= 1.1',
-    'opencv-python>= 3.4',
-    'scipy>= 1.0.0',
+    #'PyQt5',
+    'sympy>= 1.6.2',
+    #'opencv-python>= 3.4',
+    #'scipy>= 1.0.0',
 ]
 
 description = "Python program for the Hilbert projective metric"
