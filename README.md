@@ -19,7 +19,7 @@ constructing Gromov hyperbolic spaces.
 <img src = "https://github.com/kiaderouiche/hilbmetrics/blob/master/data/arton887-450f7.png" title = "Ensembles convexes" alt = "Ensembles convexes" align="middle">
 
 
-## Installation
+## Dependence
 
 Future installation. It requires on the following Python modules:
 - sympy(>= 1.6.2)
