@@ -22,4 +22,4 @@ constructing Gromov hyperbolic spaces.
 ## Installation
 
 Future installation. It requires on the following Python modules:
-- sympy(>= 1.1)
+- sympy(>= 1.6.2)
